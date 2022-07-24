@@ -22,7 +22,7 @@ export default function Sidebar() {
                 <ul className="flex flex-col pt-20">
                     {
                         list.map((item) => {
-                            return <li>
+                            return <li key={item.name}>
                                 <Link href="/admin/dashboard">
                                     <a className="flex items-center py-2 text-gray-500 hover:text-indigo-600 group" >
                                         <span className="absolute w-1.5 h-8 bg-indigo-600 rounded-r-full left-0 scale-y-0 -translate-x-full group-hover:scale-y-100 group-hover:translate-x-0 transition-transform ease-in-out" />
